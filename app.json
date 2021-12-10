@@ -1,0 +1,86 @@
+{
+    "name": "Dr Music Streaming Bot",
+    "description": "Dr Music Video Review Telegram Bot For Streaming Video & Music Trought The Telegram Group Video Chat, Powered By Pytgcalls And Pyrogram",
+    "logo": "https://telegra.ph/file/c5fd981955a04cb698426.jpgع",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "video stream"
+    ],
+    "website": "https://t.me/Z_R_RR",
+    "repository": "https://github.com/MADMUSIIC/TGMN",
+    "success_url": "https://t.me/so_alfaa",
+    "env": {
+        "اي بي اي دي": {
+            "description": "هات ال اي بي اي دي من هنا my.telegram.org",
+            "required": true
+        },
+        "اي بي هاش": {
+            "description": "هات ال اي بي هاش من هنا my.telegram.org",
+            "required": true
+        },
+        "توكن البوت": {
+            "description": "هات توكن بوتك من هنا @BotFather",
+            "required": true
+        },
+        "يوزر بوتك": {
+            "description": "هات يوزر بوتك من هنا @BotFather",
+            "required": true
+        },
+        "حط اسم البوت هنا": {
+            "description": "هتجيب اسم بوتك من هنا @BotFather",
+            "required": true
+        },
+        "حط يوزر الحساب المساعد": {
+            "description": "حط يوزر الحساب بدون علامة @",
+            "required": true
+        },
+        "حط هنا كود التريمكس بتاعك": {
+            "description": "حط كود التريمكس بتاعك",
+            "required": true
+        },
+        "حط ايدي صاحب البوت": {
+            "description": "هتحط هنا يسطا الايدي بتاعك",
+            "required": true
+        },
+        "حط يوزر جروب الدعم بتاعك": {
+            "description": "حط يوزر جروبك بدون علامه @",
+            "required": true,
+            "value": "Shayri_Music_Lovers"
+        },
+        "حط هنا يوزر قناتك": {
+            "description": "حط يوزر قناتك بدون علامه @",
+            "required": true,
+            "value": "AsadSupport"
+        },
+        "يوزر صاحب البوت": {
+            "description": "حط هنا معرف صاحب البوت بدون علامه @",
+            "required": true,
+            "value": "Dr_Asad_Ali"
+        },
+        "ALIVE_NAME": {
+            "description": "fill with your telegram account nickname/name",
+            "required": true,
+            "value": "Asad Ali"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
